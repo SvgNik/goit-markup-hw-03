@@ -1,3 +1,13 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -12,6 +22,28 @@ a {
 ul,
 ol {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -27,6 +59,19 @@ ol {
 
 .header-n-logo {
   color: #2e2f42;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 76px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .nav-links {
@@ -48,6 +93,12 @@ ol {
   font-style: normal;
 }
 
+.contact-list {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .contact-links {
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -62,7 +113,18 @@ ol {
 
 .hero {
   background-color: #2e2f42;
+  display: flex;
   text-align: center;
+  height: 600px;
+  justify-content: center;
+  padding: 188px 0;
+}
+
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 
 .hero-text {
@@ -71,8 +133,11 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  max-width: 496px;
+  margin: 0 auto;
 }
-.hero-button {
+
+.button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -81,6 +146,13 @@ ol {
   color: #ffffff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+
+  width: 169px;
+  height: 56px;
+}
+
+.hero-button {
 }
 
 .hero-button:hover,
@@ -90,19 +162,31 @@ ol {
 
 .benefits {
   background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits .container {
 }
 
 .visually-hidden {
-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
   white-space: nowrap;
   border: 0;
-
 }
 
 .benefits-list {
   list-style: none;
+  display: flex;
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-subtitle {
@@ -123,6 +207,7 @@ clip: rect(0 0 0 0);
 
 .team {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-heading {
@@ -133,13 +218,21 @@ clip: rect(0 0 0 0);
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .team-list {
   list-style: none;
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 32px;
 }
 
 .team-name {
@@ -149,6 +242,7 @@ clip: rect(0 0 0 0);
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
 }
 
 .team-position {
@@ -160,6 +254,8 @@ clip: rect(0 0 0 0);
 
 .portfolio {
   background-color: #ffffff;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 .portfolio-heading {
@@ -169,10 +265,23 @@ clip: rect(0 0 0 0);
   text-align: center;
   color: #2e2f42;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-item {
+  width: calc((100% - 48px) / 3) ;
+  box-sizing: border-box;
+  border: solid #E7E9FC 1px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-subtitle {
@@ -182,6 +291,8 @@ clip: rect(0 0 0 0);
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -189,16 +300,19 @@ clip: rect(0 0 0 0);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-bottom: 32px;
 }
 
 footer {
   background-color: #2e2f42;
+  padding: 100px 1020px 100px 156px;
 }
 
 .footer-text {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  max-width: 264px;
 }
 
 .footer-logo {
@@ -209,6 +323,9 @@ footer {
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
+
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-n-logo {
