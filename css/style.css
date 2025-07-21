@@ -40,6 +40,10 @@ img {
   margin-right: auto;
 }
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -55,6 +59,7 @@ img {
   text-transform: uppercase;
   color: #4d5ae5;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .header-n-logo {
@@ -70,8 +75,7 @@ img {
 .nav-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 0;
 }
 
 .nav-links {
@@ -150,6 +154,8 @@ img {
 
   width: 169px;
   height: 56px;
+  min-width: 169px;
+  border: none;
 }
 
 .hero-button {
@@ -180,6 +186,7 @@ img {
 .benefits-list {
   list-style: none;
   display: flex;
+  gap: 24px;
 }
 
 .benefits-item {
@@ -196,6 +203,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .benefits-text {
@@ -232,7 +240,15 @@ img {
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  padding-bottom: 32px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.team-info {
+  padding: 32px 0;
+  text-align: center;
 }
 
 .team-name {
@@ -242,7 +258,7 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-top: 32px;
+  margin-bottom: 8px
 }
 
 .team-position {
@@ -276,9 +292,9 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3) ;
+  width: calc((100% - 48px) / 3);
   box-sizing: border-box;
-  border: solid #E7E9FC 1px;
+  border: solid #e7e9fc 1px;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -305,7 +321,10 @@ img {
 
 footer {
   background-color: #2e2f42;
-  padding: 100px 1020px 100px 156px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+  padding-right: 1020px;
 }
 
 .footer-text {
